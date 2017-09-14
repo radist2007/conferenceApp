@@ -1,0 +1,114 @@
+:root {
+    --main-bg-color: #94BF81;
+    --wrap: 20%;
+    --btn-hover: #809356;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    /* margin: 10px 0 0 0; */
+}
+
+.header {
+    background-color: var(--main-bg-color);
+}
+
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerBtns {
+    display: flex;
+}
+
+.btn {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+}
+
+.wrap {
+    margin-top: 5px;
+    margin-left: var(--wrap);
+    margin-right: var(--wrap);
+}
+
+.application {
+    background:  var(--main-bg-color);
+    border-radius: 5px;
+}
+.appHeader {
+    padding: 10px;
+    text-align: center;
+}
+
+.appContent {
+    padding: 15px;
+}
+
+.appRow {
+    display: flex;
+    padding:  5px 0 5px 0;
+}
+
+.appRowDescription {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.appRowInput {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.appRow p {
+    text-align: right;
+}
+
+.appRow input[type=text] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #939393;
+    padding: 12px 20px;
+}
+
+.appRow input[type=button] {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #4C844A;
+    padding: 12px 20px;
+    background-color: #65AC51;
+    margin: 5px;
+}
+.appRow input[type=button]:hover {
+    background-color: #82E285;
+}
+
+select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #939393;
+    padding: 12px 20px;
+
+}
+
