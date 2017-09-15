@@ -1,16 +1,32 @@
-            <header class="header">
+            <header class="header wrap">
                 <div class="headerWrap">
                     <div class="headerBtns">
-                        <div class="btn">LOGO</div>
-                        <div onclick="send('home')" class="btn">Home</div>
-                        <div onclick="send('apply')" class="btn">Apply</div>
-                        <div onclick="send('about')" id="about" class="btn">ABOUT</div>
-                        <div onclick="send('contacts')" id="contacts" class="btn">CONTACTS</div>
+                        <ul class="menu">
+                            <li><div class="a" onclick="onRout('home')">головна</div></li>
+                            <li><div class="a" onclick="onRout('apply')" >заявка</div></li>
+                            <li><div class="a" onclick="onRout('about')">про нас</div>
+                            <li class="menu__list"><div class="a">минулі конференції</div>
+                                <ul class="menu__drop">
+                                    <li class="a">1 conf</li>
+                                    <li class="a">2 conf</li>
+                                    <li class="a">3 conf</li>
+                                    <li class="a">4 conf</li>
+                                    <li class="a">5 conf</li>
+                                </ul>
+                            </li>
+                            <li><div class="a" onclick="onRout('contacts')">контакти</div></li>
+                        </ul>
                     </div>
                     <div class="loginSection">
-                        <div class="loginInput">
-                            <div class="btn">login</div>
-                        </div>
-                    </div
+                        <ul class="menu">
+                            <li class="menu__list"><div class="a">логін</div>
+                                <ul class="menu__drop-logo">
+                                    <li class="a"><input class="formInput" type="text"></li>
+                                    <li class="a"><input class="formInput" type="text"></li>
+                                    <li class="a"><input type="button" value="окі=)"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </header>

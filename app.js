@@ -1,15 +1,9 @@
 
 //--------------------------------------------------------------------------------//
 var express = require('express');
-var mongo = require('mongodb');
 var bodyParser  = require('body-parser');
 
-var intel = require('./routes/intel');
-// var mongodb = require('./routes/mongodb');
-// var sendMail = require('./routes/sendMail');
-// var emailService = require('./lib/email.js')(credentials);
-
-var credentials = require('./credentials.js');
+var V = require('./routes/V');
 
 var app = express();
 
@@ -33,19 +27,12 @@ app.set('port', process.env.PORT || 3000);
 //Set Static Folder
 app.use(express.static(__dirname + '/public'));
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //--------------------------------------------------------------------------------//
-//Routes
-// app.get('/', function(req, res) {
-// 	console.log('--------/home');
-// 	res.render('home', {title: "Буде конференцію"});
-// });
 
-app.use('/', intel);
+app.use('/', V);
 
 // 404 catch-all handler (middleware)
 app.use(function(req, res, next){

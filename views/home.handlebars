@@ -1,9 +1,158 @@
 
-<section id="wrap" class="wrap">
-    <div>
-        <h1>home</h1>
-    </div>
-</section>
+            <main id="home" class="wrap">
+                <div class="bg center animated fadeIn">
+                    <div class="p10">
+                        <img class="foto" src="img/kpu.jpg" alt="">
+                        <h1 class="m10 uppercase">Конференція</h1>
+                        <p class="m5">Прийми участь у конференції</p>
+                        <p class="m5" onclick="onRout('apply')">Подай заявку</p>
+                        <p onclick="send('count')" class="m5">Вже подано заявок: <span id="count">7</span></p>
+                    </div>
+                </div>
+            </main>
+
+            <main id="apply" class="wrap noVisible">
+                <div class="bg animated fadeIn">
+                    <div class="appHeader">
+                        <h2>ЗАПОВНІТЬ ФОРМУ ДЛЯ ЗАЯВКИ НА УЧАСТЬ У КОНФЕРЕНЦІЇ</h2>
+                    </div>
+                    <div class="appContent">
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Виберіть щось</p></div>
+                            <div class="appRowInput">
+                                <select name="option">
+                                    <option value="Kiev">Kiev</option>
+                                    <option value="K-P">K-P</option>
+                                    <option value="Viznica">Viznica</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Імя</p></div>
+                            <div class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div name="fio" class="appRowDescription"><p>Фамілія</p></div>
+                            <div id="fioContactFise" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Назва статьї</p></div>
+                            <div id="email" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>ФИО автора(-ов)</p></div>
+                            <div id="fioAutor" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Название статьи</p></div>
+                            <div id="articleName" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Номер и название секции конференции</p></div>
+                            <div id="sam1" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Почтовый адрес для отправки сборника(-ов)</p></div>
+                            <div id="sam2" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>ФИО получателя</p></div>
+                            <div id="fioRecipient" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Количество страниц в статье</p></div>
+                            <div id="numOfPages" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Количество сертификатов участников</p></div>
+                            <div id="sam3" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Количество сертификатов научных руководителей</p></div>
+                            <div id="sam4" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Количество печатных оттисков статьи</p></div>
+                            <div id="sam5" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Скидка 5% на услуги публикации за размещение ссылки на страницу конференции</p></div>
+                            <div id="sam6" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>ФИО научного(-ых) руководителя(-ей)</p></div>
+                            <div id="fioScientificDirector" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <div class="appRowDescription"><p>Ученая степень, ученое звание, должность, ВУЗ науч. рук-ля</p></div>
+                            <div id="sam7" class="appRowInput"><input type="text"></div>
+                        </div>
+                        <div class="appRow">
+                            <input id="sendBtn" type="button" value="ОТПРАВИТЬ">
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <main id="about" class="wrap noVisible">
+                <div class="bg center animated fadeIn">
+                    <div class="p10">
+                        <h3 class="m10 uppercase">ОПИС ПОДІЇ</h3>
+                        <p class="m5">Назва конференції</p>
+                        <p class="m5">Місце проведення</p>
+                        <p class="m5" >Дата проведення</p>
+                        <p class="m5">Час проведення</p>
+                    </div>
+                    <div class="p10">
+                        <h3 class="m10 uppercase">ОПИС ПОДІЇ</h3>
+                        <p class="m5">Назва конференції</p>
+                        <p class="m5">Місце проведення</p>
+                        <p class="m5" >Дата проведення</p>
+                        <p class="m5">Час проведення</p>
+                    </div>
+                    <div class="p10">
+                        <h3 class="m10 uppercase">ОПИС ПОДІЇ</h3>
+                        <p class="m5">Назва конференції</p>
+                        <p class="m5">Місце проведення</p>
+                        <p class="m5" >Дата проведення</p>
+                        <p class="m5">Час проведення</p>
+                    </div>
+                    <div class="p10">
+                        <h3 class="m10 uppercase">ОПИС ПОДІЇ</h3>
+                        <p class="m5">Назва конференції</p>
+                        <p class="m5">Місце проведення</p>
+                        <p class="m5" >Дата проведення</p>
+                        <p class="m5">Час проведення</p>
+                    </div>
+                    <div class="p10">
+                        <h3 class="m10 uppercase">ОПИС ПОДІЇ</h3>
+                        <p class="m5">Назва конференції</p>
+                        <p class="m5">Місце проведення</p>
+                        <p class="m5" >Дата проведення</p>
+                        <p class="m5">Час проведення</p>
+                    </div>
+                </div>
+            </main>
+
+            <main id="contacts" class="wrap noVisible">
+                <div class="bg center animated fadeIn">
+                    <div class="p10">
+                        <h3 class="m10 uppercase">наші контакти</h3>
+                        <p class="m5">Телефон: 06722222222</p>
+                        <p class="m5">Адреса: ФізМат</p>
+                        <p class="m5" >Почта fizmat@gmail.com</p>
+                    </div>
+                    <div class="form">
+                        <form class="formLogin" method="post" action="/sendMail">
+                            <p class="m5" >Відправте нам повідомлення</p>
+                            <input id="name" class="formInput" type="text" name="name" placeholder="name">
+                            <input id="email" class="formInput" type="text" name="mail" placeholder="mail">
+                            <textarea id="message" class="formInput" name="message" id="" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                            <input id="sendBtn" onclick="send('message')" class="formInput" type="button" value="send">
+                        </form>
+                    </div>
+                </div>
+            </main>
 
 {{#section 'script'}}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

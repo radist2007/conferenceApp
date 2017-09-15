@@ -1,11 +1,17 @@
 @media screen and (max-width: 480px) {
-
+    .wrap {
+        margin: 5px;
+    }
 }
 
 @media screen and (max-width: 720px) {
-
+    .wrap {
+        margin: 25px;
+    }
 }
 
 @media screen and (max-width: 980px) {
-
+    .wrap {
+        margin: 55px;
+    }
 }
