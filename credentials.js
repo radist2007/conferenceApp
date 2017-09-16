@@ -1,6 +1,6 @@
 module.exports = {
 	db: {
-		name: "conferenceApplication",
+		name: "conferenceApp",
 		CollectionForSendMail: "usersMessage",
 		CollectionForConferenceApplication: "conferenceApplication"
 	},

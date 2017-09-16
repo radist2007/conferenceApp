@@ -1,4 +1,4 @@
-            <header class="header wrap">
+            <header class="header ">
                 <div class="headerWrap">
                     <div class="headerBtns">
                         <ul class="menu">
@@ -21,9 +21,12 @@
                         <ul class="menu">
                             <li class="menu__list"><div class="a">логін</div>
                                 <ul class="menu__drop-logo">
-                                    <li class="a"><input class="formInput" type="text"></li>
-                                    <li class="a"><input class="formInput" type="text"></li>
-                                    <li class="a"><input type="button" value="окі=)"></li>
+                                    <li class="a"><input type="text" name="user[name]"></li>
+                                    <li class="a"><input type="text" name="user[email]"></li>
+                                    <li class="a"><input type="button" value="окі=)" onclick="send('login')"></li>
+                                    {{!-- app.post("/", function (req, res) {
+                                        console.log(req.body.user.name)
+                                    }); --}}
                                 </ul>
                             </li>
                         </ul>
