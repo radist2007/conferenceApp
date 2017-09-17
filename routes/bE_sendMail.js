@@ -79,37 +79,6 @@ router.post('/', function(req, res) {
             return new Promise (function(resolve, reject) {
                 connectToDB.insert(name, mail, message);
                 resolve('thankYou');
-
-                // var MongoClient = mongodb.MongoClient;
-
-                // var url = 'mongodb://localhost:27017/sendMailApp';
-                // var data;
-
-                // MongoClient.connect(url, function(err, db){
-                //     if(err){
-                //         console.log('Unable to connect to the server ', err);
-                //         reject(temp);
-                //     } else {
-                //         console.log('connection GOOD!'.bgGreen);
-
-                //         db.collection('usersMessages').insert({name: name, email: mail, message: message}, function(err, result) {
-                //             if(err) {
-                //                 console.log(err);
-                //                 res.sendStatus(500);
-                //                 db.close();
-                //                 reject(temp);
-                //             } else {
-                //                 console.log('connection result: '.cyan + result);
-                //                 db.close();
-                //                 resolve('thankYou');
-                //             }
-                //         })
-
-                //                 resolve('thankYou');
-                //         console.log("connection code end!");
-                //         db.close();
-                //     }
-                // })
             })
         }
 
