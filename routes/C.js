@@ -7,11 +7,11 @@ function serevThink(hasCame, toSend){
 
     if(hasCame.body.v1 == "countConferenceApplication"){
 //COUTN SAM
-        M.count("countConferenceApplication", credentials.db.CollectionForConferenceApplication, function(callback){toSend({v1: "countConferenceApplication", v2: callback})});
+        M.count("countConferenceApplication", function(callback){toSend({v1: "countConferenceApplication", v2: callback})});
 
     } else if(hasCame.body.v1 == "countMessages"){
 //COUTN SAM
-        M.count("countMessages", credentials.db.CollectionForSendMail, function(callback){toSend({v1: "coutnMessages", v2: callback})});
+        M.count("countMessages", function(callback){toSend({v1: "coutnMessages", v2: callback})});
 
 //     } else if(hasCame.body.v1 == "home"){
 // //HOME call

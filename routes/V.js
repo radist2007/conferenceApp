@@ -30,7 +30,12 @@ router.post('/login', function(req, res) {
     })
 });
 router.post('/message', function(req, res) {
+    console.log('V -> POST /_________________________');
     console.log('V -> POST /message: ' + req.body.v1);
+    console.log('V -> POST /message: ' + req.body.v2);
+    console.log('V -> POST /message: ' + req.body.v3);
+    console.log('V -> POST /message: ' + req.body.v4);
+    console.log('V -> POST /-------------------------');
     C.send(req, function(callback){
     console.log('V -> message callback: ' + callback);
         res.status(200).send(callback);
